@@ -18,12 +18,26 @@
     --card-bg: #1e293b;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     color: var(--text-color);
     background-color: var(--bg-light);
     transition: var(--transition);
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
 }
 
 /* Typography */
