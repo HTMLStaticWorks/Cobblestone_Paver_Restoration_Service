@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Insights | StoneGuard</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="bi bi-gem me-2"></i>
+                <span>StoneGuard</span>
+            </a>
+            
+            <div class="d-flex align-items-center order-lg-3">
+                <div class="rtl-toggle me-2" id="rtlToggle">RTL</div>
+                <div class="theme-toggle me-3" id="themeToggle">
+                    <i class="bi bi-moon-stars-fill"></i>
+                </div>
+                <div class="d-none d-lg-flex">
+                    <a href="login.html" class="btn btn-outline-custom me-2 btn-custom">Login</a>
+                    <a href="register.html" class="btn btn-primary-custom btn-custom">Sign Up</a>
+                </div>
+                <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu (Offcanvas) -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header border-bottom">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="bi bi-gem me-2"></i>
+                <span>StoneGuard</span>
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav mb-4">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="d-grid gap-2">
+                <a href="login.html" class="btn btn-outline-custom btn-custom">Login</a>
+                <a href="register.html" class="btn btn-primary-custom btn-custom">Sign Up</a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="blog-hero">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 text-center">
+                        <h1 class="display-3 fw-bold text-white mb-4">Stone Care Insights</h1>
+                        <p class="lead text-white opacity-75 mx-auto" style="max-width: 700px;">Expert advice on maintaining and restoring your outdoor stone surfaces.</p>
+                        <div class="row justify-content-center mt-5">
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search articles...">
+                                    <button class="btn btn-primary-custom" type="button"><i class="bi bi-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                            <img src="assets/images/service-1.png" class="card-img-top" alt="Blog">
+                            <div class="card-body p-4">
+                                <div class="mb-2"><span class="badge bg-secondary-color">Maintenance</span> <small class="text-muted ms-2">May 12, 2026</small></div>
+                                <h4 class="card-title">How to Identify Failed Sealers</h4>
+                                <p class="card-text text-muted small">Is your driveway absorbing water? Here's how to check if your sealer has reached its end of life.</p>
+                                <a href="blog-details.html" class="text-secondary-color text-decoration-none fw-bold">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat for more blog posts -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

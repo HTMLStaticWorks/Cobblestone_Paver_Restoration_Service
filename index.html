@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoneGuard | Cobblestone & Paver Restoration Service</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="bi bi-gem me-2"></i>
+                <span>StoneGuard</span>
+            </a>
+            
+            <div class="d-flex align-items-center order-lg-3">
+                <div class="rtl-toggle me-2" id="rtlToggle">RTL</div>
+                <div class="theme-toggle me-3" id="themeToggle">
+                    <i class="bi bi-moon-stars-fill"></i>
+                </div>
+                <div class="d-none d-lg-flex">
+                    <a href="login.html" class="btn btn-outline-custom me-2 btn-custom">Login</a>
+                    <a href="register.html" class="btn btn-primary-custom btn-custom">Sign Up</a>
+                </div>
+                <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu (Offcanvas) -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header border-bottom">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="bi bi-gem me-2"></i>
+                <span>StoneGuard</span>
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav mb-4">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="d-grid gap-2">
+                <a href="login.html" class="btn btn-outline-custom btn-custom">Login</a>
+                <a href="register.html" class="btn btn-primary-custom btn-custom">Sign Up</a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section d-flex align-items-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <h1 class="display-3 fw-bold mb-4">Restore the Beauty of Your Stone Surfaces</h1>
+                        <p class="lead mb-5 opacity-75">Professional cobblestone cleaning, sealing, and repair services that make your driveway and patio look brand new again.</p>
+                        <div class="d-flex flex-column flex-md-row gap-3">
+                            <a href="services.html" class="btn btn-primary-custom btn-hero">Our Services</a>
+                            <a href="contact.html" class="btn btn-outline-light btn-hero">Free Consultation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section (Content Section 1) -->
+        <section class="py-5 bg-dark">
+            <div class="container">
+                <div class="row g-4 text-center">
+                    <div class="col-md-3">
+                        <div class="stat-card">
+                            <h2>10+</h2>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stat-card">
+                            <h2>500+</h2>
+                            <p>Projects Done</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stat-card">
+                            <h2>100%</h2>
+                            <p>Client Satisfaction</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stat-card">
+                            <h2>24/7</h2>
+                            <p>Expert Support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features (Content Section 2) -->
+        <section class="py-5 bg-light-subtle">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="display-5">Why Choose StoneGuard?</h2>
+                    <div class="mx-auto bg-secondary-color" style="height: 4px; width: 60px;"></div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-img-wrapper">
+                                <img src="assets/images/service-2.png" alt="Premium Protection">
+                            </div>
+                            <div class="card-body">
+                                <h3>Premium Protection</h3>
+                                <p class="text-muted">We use medical-grade sealants that protect your stone from oil, grease, and weather for years.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-img-wrapper">
+                                <img src="assets/images/service-1.png" alt="Deep Cleaning">
+                            </div>
+                            <div class="card-body">
+                                <h3>Deep Cleaning</h3>
+                                <p class="text-muted">Our high-pressure steam cleaning removes even the toughest stains, moss, and algae buildup.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-img-wrapper">
+                                <img src="assets/images/service-3.png" alt="Expert Repair">
+                            </div>
+                            <div class="card-body">
+                                <h3>Expert Repair</h3>
+                                <p class="text-muted">From sunken pavers to cracked stones, our craftsmen restore the structural integrity of your paths.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Preview (Content Section 3) -->
+        <section class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="display-5">Our Main Services</h2>
+                    <p class="text-muted">Specialized solutions for every stone type</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="assets/images/service-1.png" class="card-img-top" alt="Cleaning">
+                            <div class="card-body p-4">
+                                <h3>Power Washing</h3>
+                                <p class="text-muted">Professional-grade cleaning for all outdoor surfaces.</p>
+                                <a href="service-details.html" class="text-secondary-color text-decoration-none fw-bold">Learn More <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="assets/images/service-2.png" class="card-img-top" alt="Sealing">
+                            <div class="card-body p-4">
+                                <h3>Stone Sealing</h3>
+                                <p class="text-muted">Lock in the beauty and protect against future stains.</p>
+                                <a href="service-details.html" class="text-secondary-color text-decoration-none fw-bold">Learn More <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card">
+                            <img src="assets/images/service-3.png" class="card-img-top" alt="Repair">
+                            <div class="card-body p-4">
+                                <h3>Paver Repair</h3>
+                                <p class="text-muted">Leveling and replacing damaged pavers with precision.</p>
+                                <a href="service-details.html" class="text-secondary-color text-decoration-none fw-bold">Learn More <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section (Content Section 4) -->
+        <section class="py-5 bg-dark text-white">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="display-5 text-white">How We Work</h2>
+                    <p class="text-light opacity-75">Simple 4-step process to perfection</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <div class="process-step">
+                            <div class="process-img-wrapper">
+                                <img src="assets/images/about-hero.png" alt="Inspection">
+                                <div class="process-number">01</div>
+                            </div>
+                            <h4 class="text-white">Inspection</h4>
+                            <p class="small opacity-75">We assess the condition of your stone surfaces.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="process-step">
+                            <div class="process-img-wrapper">
+                                <img src="assets/images/service-1.png" alt="Deep Clean">
+                                <div class="process-number">02</div>
+                            </div>
+                            <h4 class="text-white">Deep Clean</h4>
+                            <p class="small opacity-75">Removing dirt, grime, and organic growth.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="process-step">
+                            <div class="process-img-wrapper">
+                                <img src="assets/images/service-3.png" alt="Restoration">
+                                <div class="process-number">03</div>
+                            </div>
+                            <h4 class="text-white">Restoration</h4>
+                            <p class="small opacity-75">Repairing joints and replacing damaged stones.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="process-step">
+                            <div class="process-img-wrapper">
+                                <img src="assets/images/service-2.png" alt="Sealing">
+                                <div class="process-number">04</div>
+                            </div>
+                            <h4 class="text-white">Sealing</h4>
+                            <p class="small opacity-75">Applying premium sealant for long-lasting protection.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials (Content Section 5) -->
+        <section class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="display-5">What Clients Say</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card p-4 border-0 shadow-sm testimonial-card">
+                            <img src="https://i.pravatar.cc/150?u=john" alt="John Doe" class="testimonial-author-img">
+                            <div class="mb-3 text-warning">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="fst-italic text-muted">"StoneGuard completely transformed our 20-year-old driveway. It looks like it was just installed today!"</p>
+                            <h5 class="mb-0">John Doe</h5>
+                            <small class="text-secondary-color">Homeowner</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-4 border-0 shadow-sm testimonial-card">
+                            <img src="https://i.pravatar.cc/150?u=jane" alt="Jane Smith" class="testimonial-author-img">
+                            <div class="mb-3 text-warning">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="fst-italic text-muted">"Excellent service and attention to detail. The crew was professional and left everything spotless."</p>
+                            <h5 class="mb-0">Jane Smith</h5>
+                            <small class="text-secondary-color">Property Manager</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-4 border-0 shadow-sm testimonial-card">
+                            <img src="https://i.pravatar.cc/150?u=mike" alt="Mike Wilson" class="testimonial-author-img">
+                            <div class="mb-3 text-warning">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="fst-italic text-muted">"The sealing they did is amazing. Water just beads off the stone now. Highly recommend!"</p>
+                            <h5 class="mb-0">Mike Wilson</h5>
+                            <small class="text-secondary-color">Restaurant Owner</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA (Content Section 6) -->
+        <section class="py-5 bg-secondary-color">
+            <div class="container text-center">
+                <h2 class="display-4 fw-bold mb-4" style="color: var(--primary-color) !important;">Ready to Refresh Your Path?</h2>
+                <p class="lead mb-5 fw-medium" style="color: var(--primary-color) !important;">Join 500+ happy customers who trust StoneGuard for their restoration needs.</p>
+                <a href="contact.html" class="btn btn-cta">Get a Free Quote Now</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <a class="footer-logo d-flex align-items-center mb-3 text-decoration-none" href="index.html">
+                        <i class="bi bi-gem me-2"></i>
+                        <span>StoneGuard</span>
+                    </a>
+                    <p class="text-muted mb-4">Premium stone restoration and protection services since 2016. We bring life back to your outdoor spaces.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-outline-secondary btn-sm rounded-circle"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="btn btn-outline-secondary btn-sm rounded-circle"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="btn btn-outline-secondary btn-sm rounded-circle"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="btn btn-outline-secondary btn-sm rounded-circle"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-4">Company</h5>
+                    <a href="about.html" class="footer-link">About Us</a>
+                    <a href="services.html" class="footer-link">Services</a>
+                    <a href="pricing.html" class="footer-link">Pricing</a>
+                    <a href="blog.html" class="footer-link">Our Blog</a>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-4">Support</h5>
+                    <a href="contact.html" class="footer-link">Contact</a>
+                    <a href="#" class="footer-link">FAQ</a>
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <p class="text-muted small mb-3">Subscribe to get stone care tips and exclusive offers.</p>
+                    <form id="newsletterForm" class="input-group">
+                        <input type="email" class="form-control border-0 bg-white" placeholder="Email Address" required>
+                        <button class="btn btn-primary-custom" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="mb-4 opacity-10">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 text-muted">&copy; 2026 StoneGuard. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="mt-3 mt-md-0">
+                        <span class="text-muted me-3">Managed by Professional Team</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <div id="backToTop">
+        <i class="bi bi-arrow-up-short fs-3"></i>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

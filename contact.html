@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | StoneGuard</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="bi bi-gem me-2"></i>
+                <span>StoneGuard</span>
+            </a>
+            
+            <div class="d-flex align-items-center order-lg-3">
+                <div class="rtl-toggle me-2" id="rtlToggle">RTL</div>
+                <div class="theme-toggle me-3" id="themeToggle">
+                    <i class="bi bi-moon-stars-fill"></i>
+                </div>
+                <div class="d-none d-lg-flex">
+                    <a href="login.html" class="btn btn-outline-custom me-2 btn-custom">Login</a>
+                    <a href="register.html" class="btn btn-primary-custom btn-custom">Sign Up</a>
+                </div>
+                <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu (Offcanvas) -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header border-bottom">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="bi bi-gem me-2"></i>
+                <span>StoneGuard</span>
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav mb-4">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="d-grid gap-2">
+                <a href="login.html" class="btn btn-outline-custom btn-custom">Login</a>
+                <a href="register.html" class="btn btn-primary-custom btn-custom">Sign Up</a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="contact-hero">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 text-center">
+                        <h1 class="display-3 fw-bold text-white mb-4">Get in Touch</h1>
+                        <p class="lead text-white opacity-75 mx-auto" style="max-width: 700px;">We're here to help you restore and protect your stone surfaces. Reach out today for a free on-site consultation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6">
+                        <h2 class="h3 fw-bold mb-4">Request a Free Assessment</h2>
+                        <p class="text-muted mb-5">Fill out the form below and our experts will contact you within 24 hours.</p>
+                    <div class="card p-4 border-0 shadow-sm">
+                        <form>
+                            <div class="mb-3"><label class="form-label">Full Name</label><input type="text" class="form-control"></div>
+                            <div class="mb-3"><label class="form-label">Phone</label><input type="tel" class="form-control"></div>
+                            <div class="mb-3"><label class="form-label">Address</label><input type="text" class="form-control"></div>
+                            <div class="mb-3"><label class="form-label">Message</label><textarea class="form-control" rows="3"></textarea></div>
+                            <button type="submit" class="btn btn-primary-custom w-100 py-3">Send Request</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="h-100 rounded-4 overflow-hidden shadow-sm" style="min-height: 400px;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1715412345678!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
