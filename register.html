@@ -14,6 +14,14 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="bg-tertiary">
+    <!-- Theme & RTL Toggles -->
+    <div class="position-fixed top-0 end-0 p-4 d-flex gap-2" style="z-index: 1050;">
+        <div class="rtl-toggle shadow-sm" id="rtlToggle">RTL</div>
+        <div class="theme-toggle shadow-sm" id="themeToggle">
+            <i class="bi bi-moon-stars-fill"></i>
+        </div>
+    </div>
+
     <div class="container py-5">
         <div class="row justify-content-center">
             <div class="col-md-6">
@@ -25,6 +33,8 @@
                         </a>
                         <p class="text-muted mt-2">Join us today! Create your account to start your restoration journey.</p>
                     </div>
+
+
                     <form action="dashboard.html">
                         <div class="row">
                             <div class="col-md-12 mb-3">
@@ -64,6 +74,21 @@
                         </div>
                         <button type="submit" class="btn btn-primary-custom w-100 py-3 fw-bold">Create Account</button>
                     </form>
+
+                    <div class="position-relative my-4">
+                        <hr>
+                        <span class="position-absolute top-50 start-50 translate-middle px-3 text-muted small" style="background-color: var(--card-bg);">or</span>
+                    </div>
+
+                    <!-- Social Login Buttons -->
+                    <div class="d-flex flex-column gap-3">
+                        <button class="btn btn-outline-custom w-100 py-2 d-flex align-items-center justify-content-center" style="border-color: #dee2e6; color: var(--text-color);">
+                            <i class="bi bi-google me-2 text-danger"></i> Continue with Google
+                        </button>
+                        <button class="btn btn-outline-custom w-100 py-2 d-flex align-items-center justify-content-center" style="border-color: #dee2e6; color: var(--text-color);">
+                            <i class="bi bi-apple me-2 text-dark"></i> Continue with Apple
+                        </button>
+                    </div>
                     <div class="text-center mt-4">
                         <p class="small text-muted mb-0">Already have an account? <a href="login.html" class="text-secondary-color text-decoration-none fw-bold">Login</a></p>
                     </div>
