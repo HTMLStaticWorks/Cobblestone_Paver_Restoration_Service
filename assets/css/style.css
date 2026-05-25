@@ -12,10 +12,40 @@
 [data-bs-theme="dark"] {
     --primary-color: #f1f5f9;
     --secondary-color: #fbbf24;
-    --tertiary-color: #1e293b;
+    --tertiary-color: #1a1d20;
     --text-color: #cbd5e1;
-    --bg-light: #0f172a;
-    --card-bg: #1e293b;
+    --bg-light: #000000;
+    --card-bg: #121212;
+    
+    --bs-body-bg: #000000;
+    --bs-body-bg-rgb: 0, 0, 0;
+    --bs-dark: #1a1d20;
+    --bs-dark-rgb: 26, 29, 32;
+    --bs-light-bg-subtle: #1a1d20;
+    --bs-secondary-bg: #1a1d20;
+    --bs-tertiary-bg: #1a1d20;
+}
+
+[data-bs-theme="dark"] body {
+    background-color: #000000 !important;
+}
+
+[data-bs-theme="dark"] .bg-light,
+[data-bs-theme="dark"] .bg-light-subtle,
+[data-bs-theme="dark"] .bg-dark,
+[data-bs-theme="dark"] .bg-tertiary,
+[data-bs-theme="dark"] .bg-secondary-color,
+[data-bs-theme="dark"] .footer {
+    background-color: var(--tertiary-color) !important;
+}
+
+[data-bs-theme="dark"] .bg-white {
+    background-color: var(--card-bg) !important;
+    color: var(--text-color) !important;
+}
+
+[data-bs-theme="dark"] .card {
+    background-color: var(--card-bg) !important;
 }
 
 html, body {
@@ -80,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-outline-custom {
-    border: 2px solid var(--secondary-color);
+    border: 2px solid var(--secondary-color) !important;
     color: var(--secondary-color);
     background: transparent;
 }
@@ -134,11 +164,11 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-brand {
     font-weight: 800;
     font-size: 1.5rem;
-    color: var(--primary-color) !important;
+    color: #d97706 !important;
 }
 
-.navbar-brand i {
-    color: var(--secondary-color);
+.navbar-brand i, .footer-logo i {
+    color: #d97706 !important;
 }
 
 .nav-link {
@@ -469,7 +499,7 @@ footer {
 .footer-logo {
     font-weight: 800;
     font-size: 1.5rem;
-    color: var(--primary-color);
+    color: #d97706 !important;
 }
 
 .footer-link {
@@ -1012,4 +1042,53 @@ footer {
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     z-index: 5;
     border: 3px solid #1e293b;
+}
+
+/* -----------------------------------------
+   RTL Mode Custom Overrides (System-Wide)
+----------------------------------------- */
+
+/* Navigation & Toggles */
+[dir="rtl"] .navbar-brand {
+    margin-right: 0 !important;
+    margin-left: 0.5rem !important;
+}
+
+[dir="rtl"] .rtl-toggle, 
+[dir="rtl"] .theme-toggle {
+    margin-right: 0 !important;
+    margin-left: 4px !important;
+}
+
+/* Floating Elements */
+[dir="rtl"] #backToTop {
+    right: auto !important;
+    left: 30px !important;
+}
+
+[dir="rtl"] .process-number {
+    right: auto !important;
+    left: 5px !important;
+}
+
+/* Dashboard Layout */
+[dir="rtl"] .sidebar {
+    left: auto !important;
+    right: 0 !important;
+    border-right: none !important;
+    border-left: 1px solid rgba(0,0,0,0.1);
+}
+
+[dir="rtl"] .main-content {
+    margin-left: 0 !important;
+    margin-right: 280px !important;
+}
+
+/* Text Alignment Fixes for absolute positioning or custom classes */
+[dir="rtl"] .text-left-custom {
+    text-align: right !important;
+}
+
+[dir="rtl"] .text-right-custom {
+    text-align: left !important;
 }

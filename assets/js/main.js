@@ -48,17 +48,31 @@ if (backToTop) {
 const rtlToggles = document.querySelectorAll('.rtl-toggle');
 const html = document.documentElement;
 
+function updateRtlStylesheet(isRtl) {
+    const bsLinks = document.querySelectorAll('link[href*="bootstrap"]');
+    bsLinks.forEach(link => {
+        if (link.href.includes('bootstrap.min.css') || link.href.includes('bootstrap.rtl.min.css')) {
+            link.href = isRtl 
+                ? "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" 
+                : "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css";
+        }
+    });
+}
+
 rtlToggles.forEach(toggle => {
     toggle.addEventListener('click', () => {
         const isRtl = html.getAttribute('dir') === 'rtl';
-        html.setAttribute('dir', isRtl ? 'ltr' : 'rtl');
-        localStorage.setItem('rtlMode', !isRtl);
+        const newRtl = !isRtl;
+        html.setAttribute('dir', newRtl ? 'rtl' : 'ltr');
+        localStorage.setItem('rtlMode', newRtl);
+        updateRtlStylesheet(newRtl);
     });
 });
 
 // Load RTL Mode
 if (localStorage.getItem('rtlMode') === 'true') {
     html.setAttribute('dir', 'rtl');
+    updateRtlStylesheet(true);
 }
 
 // Newsletter Form
